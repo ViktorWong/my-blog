@@ -1,0 +1,46 @@
+{
+    "compilerOptions": {
+        "paths": {
+            "@constants/*": ["./src/constants/*"],
+            "@components/*": ["./src/components/*"],
+            "@utils/*": ["./src/utils/*"],
+            "@assets/*": ["./src/assets/*"],
+            "@apis/*": ["./src/apis/*"],
+            "@pages/*": ["./src/pages/*"],
+            "@layouts/*": ["./src/layouts/*"],
+            "@routers/*": ["./src/routers/*"],
+            "@stores/*": ["./src/stores/*"],
+            "@/*": ["./src/*"]
+        },
+        "outDir": "build/dist",
+        "module": "esnext",
+        "target": "es5",
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "baseUrl": ".",
+        "sourceMap": true,
+        "allowJs": true,
+        "jsx": "react-jsx",
+        "moduleResolution": "node",
+        "rootDir": "src",
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": false,
+        "noImplicitAny": false,
+        "importHelpers": true,
+        "strictNullChecks": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "noUnusedLocals": true,
+        "skipLibCheck": false,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "experimentalDecorators": true,
+        "noFallthroughCasesInSwitch": true
+    }
+}
