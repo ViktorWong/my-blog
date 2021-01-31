@@ -4,14 +4,14 @@ import "./index.css";
 import Layouts from "@layouts/Layouts";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "mobx-react";
-import stores from '@stores/index';
+import stores from "@stores/index";
 
 ReactDOM.render(
-  <Provider {...stores}>
-    <React.StrictMode>
+  <React.StrictMode>
+    <Provider {...stores}>
       <Layouts />
-    </React.StrictMode>
-  </Provider>,
+    </Provider>
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
@@ -19,4 +19,3 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
-

@@ -3,7 +3,7 @@ Author: Viktor (victor318x@gmail.com)
 Header.tsx (c) 2021
 Desc: description
 Created:  1/30/2021, 2:38:52 PM
-Modified: 2021/1/30 下午8:45:52
+Modified: 2021/1/30 下午11:41:08
 */
 
 import React from "react";
@@ -16,18 +16,21 @@ const headerList = {
   '首页': {
     url: routePath.home,
   },
-  '知识': {
-    url: routePath.notFound,
+  '博客': {
+    url: routePath.blog,
   },
-  '关于': {
-    url: routePath.notFound,
+  '存档': {
+    url: routePath.archive,
   },
+  '关于我': {
+    url: routePath.about
+  }
 };
 
 const Header: React.FC<{}> = () => {
   return (
     <header
-      className={classNames("no-user-select",'flex','bg-yellow-500','text-white')}
+      className={classNames("no-user-select",'flex','text-white','fixed','top-0','w-screen','p-6','z-50')}
     >
          <Link to={routePath.home} className={classNames('')}>
           ViktorHub
@@ -38,8 +41,7 @@ const Header: React.FC<{}> = () => {
               <li  key={key}>
                 <Link
                   to={{
-                    pathname: headerList[key].url,
-                    search: '',
+                    pathname: headerList[key].url
                   }}
                 >
                   <span className={classNames('flex-1')}>{key}</span>
